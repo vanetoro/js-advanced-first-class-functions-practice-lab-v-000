@@ -13,7 +13,6 @@ function logDriversByHometown(array, location){
   })
 }
 
-<<<<<<< HEAD
 function driversByRevenue(array){
   return array.slice().sort(function(a,b){
     return a.revenue - b.revenue
@@ -28,18 +27,18 @@ function driversByName(array){
 }
 
 function totalRevenue(array){
-  array.reduce(function(0,revenue){
-    console.log(revenue)
-  }
-
+  return array.reduce(function(accumulator, currentValue) {
+    return ( accumulator + currentValue.revenue)
+}, 0);
 }
 
-function averageRevenue(){
 
-}
-=======
-// function driversByRevenue(array){
-//   array.sort
-//   console.log(array)
+// function averageRevenue(array){
+//   averageRev =  array.reduce(function(accumulator, currentValue) {
+//     return ( accumulator + currentValue.revenue)
+//   }, 0);
+//    return averageRev/array.length
 // }
->>>>>>> 59973e20779e3d9e503945673584fd575b6fca9e
+
+
+
