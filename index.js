@@ -13,7 +13,26 @@ function logDriversByHometown(array, location){
   })
 }
 
-// function driversByRevenue(array){
-//   array.sort
-//   console.log(array)
-// }
+function driversByRevenue(array){
+  return array.slice().sort(function(a,b){
+    return a.revenue - b.revenue
+  })
+
+}
+
+function driversByName(array){
+  return array.slice().sort(function(a,b){
+    return a['name'].localeCompare(b['name']);
+  })
+}
+
+function totalRevenue(array){
+  array.reduce(function(0,revenue){
+    console.log(revenue)
+  }
+
+}
+
+function averageRevenue(){
+
+}
