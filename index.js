@@ -27,12 +27,15 @@ function driversByName(array){
 }
 
 function totalRevenue(array){
-  array.reduce(function(0,revenue){
-    console.log(revenue)
-  }
-
+  return array.reduce(function(accumulator, currentValue) {
+    return ( accumulator + currentValue.revenue)
+}, 0);
 }
 
-function averageRevenue(){
 
+function averageRevenue(array){
+  averageRev =  array.reduce(function(accumulator, currentValue) {
+    return ( accumulator + currentValue.revenue)
+  }, 0);
+   return averageRev/array.length
 }
