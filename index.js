@@ -33,12 +33,9 @@ function totalRevenue(array){
 }
 
 
-// function averageRevenue(array){
-//   averageRev =  array.reduce(function(accumulator, currentValue) {
-//     return ( accumulator + currentValue.revenue)
-//   }, 0);
-//    return averageRev/array.length
-// }
-
-
-
+function averageRevenue(array){
+  averageRev =  array.reduce(function(accumulator, currentValue) {
+    return ( accumulator + currentValue.revenue)
+  }, 0);
+   return averageRev/array.length
+}
