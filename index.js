@@ -13,6 +13,7 @@ function logDriversByHometown(array, location){
   })
 }
 
+<<<<<<< HEAD
 function driversByRevenue(array){
   return array.slice().sort(function(a,b){
     return a.revenue - b.revenue
@@ -36,3 +37,9 @@ function totalRevenue(array){
 function averageRevenue(){
 
 }
+=======
+// function driversByRevenue(array){
+//   array.sort
+//   console.log(array)
+// }
+>>>>>>> 59973e20779e3d9e503945673584fd575b6fca9e
